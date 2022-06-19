@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sass/sussy.css" />
+    <title>Projeto:Dreads;</title>
+  </head>
+  <body class="" >
+    <!--FIXME: navbar -->
+
+    <nav class="navbar navbar-expand-md fs-4 navbar-dark fixed-top">
+      <div class="container-fluid">
+        <!--FIXME: tira o fluid!!!-->
+        <a class="navbar-brand fs-3" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a id="prog" class="nav-link active" aria-current="page" href="#">
+                Galeria
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="prog" class="nav-link" href="#questions">Dúvidas</a>
+            </li>
+            <li class="nav-item">
+              <a id="prog" class="nav-link" href="#agendar"> Agendar </a>
+            </li>
+            <li class="nav-item">
+              <a id="prog" class="nav-link" href="#makers">DreadMakers</a>
+              <!--cabelereiros, atendentes, etc-->
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Redes Sociais
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Action face
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      viewBox="0 0 512 512">
+                      <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                      <path
+                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                    </svg>
+                  </a>
+                </li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- FIXME: CABEÇALHO  : tira o fluid-->
+    <header class="container-fluid bg-light text-capitalize" id="con">
+      <div
+        id="carouselFade"
+        class="carousel slide " 
+        data-bs-touch="true"
+        data-bs-interval="false">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselFade"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselFade"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <!-- <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <!-- <img src="cha3.jpeg" alt="" /> -->
+            <img src="elisa-sem.jpeg" width="100%" height="500px" alt="" />
+            <!-- <img src="https://picsum.photos/seed/picsum/1200/500" alt=""> -->
+            <!-- <img src="http://source.unsplash.com/random" alt=""> -->
+
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <!-- <img src="cha-fundo.jpeg" alt=""> -->
+            <img
+              src="https://picsum.photos/id/107/1200/500"
+              style="width: 100%"
+              alt="" />
+
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="carousel-item" >  data-bs-interval="2000" 
+              <img src="http://placeimg.com/400/600/arch" class="d-block w-100" height="500" alt="...">
+            
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            
+            </div> -->
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselFade"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselFade"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- FIXME: FLEXBOX -->
+    <section id="flex" class="container-fluid mb-5 text-center">
+      <!-- testar containers!-->
+
+      <div class="row g-0">
+        <div class="col pt-5" id="peso">
+          <h1 class="fw-bold text-capitalize">Mais fotos?</h1>
+          <!-- <p class="lead">
+            temos horários flexíveis podemos atender a noite, em finais de
+            semana e feriados
+          </p> -->
+          <!-- <a class="btn btn-danger text-uppercase fw-bold" role="button">
+            agendar
+          </a> -->
+        </div>
+      </div>
+
+      <div class="row g-0">
+        <div class="col-md-12 col-lg-4 px-5 pb-5" id="food">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 448 512"> <path d="M336 128c-32 0-80.02 16.03-112 32.03c-32.01-16-79.1-32.02-111.1-32.03C32 128 .4134 210.5 .0033 288c-.5313 99.97 63.99 224 159.1 224c32 0 48-16 64-16c16 0 32 16 64 16c96 0 160.4-122.8 159.1-224C447.7 211.6 416 128 336 128zM320 32V0h-32C243.8 0 208 35.82 208 80v32h32C284.2 112 320 76.18 320 32z"/></svg> -->
+
+          <h1 class="fs-1">artesanatos</h1>
+
+          <p class="fs-5 ">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
+            possimus error eveniet dolorem itaque?
+          </p>
+
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img
+                  src="img/billion-dream_poster01.png"
+                  alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img
+                  src="img/billion-dream_poster02.png"
+                  alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img
+                  src="img/billion-dream_flag.png"
+                  alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-4 px-5 pb-5" id="natural">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. <path d="M188.1 210.8l-45.25 45.25l45.25 45.25l45.25-45.25L188.1 210.8zM301.2 188.1l-45.25-45.25L210.7 188.1l45.25 45.25L301.2 188.1zM210.7 323.9l45.25 45.25l45.25-45.25L255.1 278.6L210.7 323.9zM256 16c-132.5 0-240 107.5-240 240s107.5 240 240 240s240-107.5 240-240S388.5 16 256 16zM442.6 295.6l-11.25 11.25c-3.125 3.125-8.25 3.125-11.38 0L391.8 278.6l-45.25 45.25l34 33.88l16.88-16.88c3.125-3.125 8.251-3.125 11.38 0l11.25 11.25c3.125 3.125 3.125 8.25 0 11.38l-16.88 16.88l16.88 17c3.125 3.125 3.125 8.25 0 11.38l-11.25 11.25c-3.125 3.125-8.251 3.125-11.38 0l-16.88-17l-17 17c-3.125 3.125-8.25 3.125-11.38 0l-11.25-11.25c-3.125-3.125-3.125-8.25 0-11.38l17-17l-34-33.88l-45.25 45.25l28.25 28.25c3.125 3.125 3.125 8.25 0 11.38l-11.25 11.25c-3.125 3.125-8.25 3.125-11.38 0l-28.25-28.25L227.7 442.6c-3.125 3.125-8.25 3.125-11.38 0l-11.25-11.25c-3.125-3.125-3.125-8.25 0-11.38l28.25-28.25l-45.25-45.25l-33.88 34l16.88 16.88c3.125 3.125 3.125 8.25 0 11.38l-11.25 11.25c-3.125 3.125-8.25 3.125-11.38 0L131.6 403.1l-16.1 16.88c-3.125 3.125-8.25 3.125-11.38 0l-11.25-11.25c-3.125-3.125-3.125-8.25 0-11.38l17-16.88l-17-17c-3.125-3.125-3.125-8.25 0-11.38l11.25-11.25c3.125-3.125 8.25-3.125 11.38 0l16.1 17l33.88-34L120.2 278.6l-28.25 28.25c-3.125 3.125-8.25 3.125-11.38 0L69.37 295.6c-3.125-3.125-3.125-8.25 0-11.38l28.25-28.25l-28.25-28.25c-3.125-3.125-3.125-8.25 0-11.38l11.25-11.25c3.125-3.125 8.25-3.125 11.38 0l28.25 28.25l45.25-45.25l-34-34l-16.88 17c-3.125 3.125-8.25 3.125-11.38 0l-11.25-11.25c-3.125-3.125-3.125-8.25 0-11.38l16.88-17l-16.88-16.88c-3.125-3.125-3.125-8.25 0-11.38l11.25-11.25c3.125-3.125 8.25-3.125 11.38 0l16.88 17l17-17c3.125-3.125 8.25-3.125 11.38 0l11.25 11.25c3.125 3.125 3.125 8.25 0 11.38l-17 16.88l34 34l45.25-45.25L205.1 92c-3.125-3.125-3.125-8.25 0-11.38l11.25-11.25c3.125-3.125 8.25-3.125 11.38 0l28.25 28.25l28.25-28.25c3.125-3.125 8.25-3.125 11.38 0l11.25 11.25c3.125 3.125 3.125 8.25 0 11.38l-28.25 28.25l45.25 45.25l34-34l-17-16.88c-3.125-3.125-3.125-8.25 0-11.38l11.25-11.25c3.125-3.125 8.25-3.125 11.38 0l17 16.88l16.88-16.88c3.125-3.125 8.251-3.125 11.38 0l11.25 11.25c3.125 3.125 3.125 8.25 0 11.38l-17 16.88l17 17c3.125 3.125 3.125 8.25 0 11.38l-11.25 11.25c-3.125 3.125-8.251 3.125-11.38 0l-16.88-17l-34 34l45.25 45.25l28.25-28.25c3.125-3.125 8.25-3.125 11.38 0l11.25 11.25c3.125 3.125 3.125 8.25 0 11.38l-28.25 28.25l28.25 28.25C445.7 287.4 445.7 292.5 442.6 295.6zM278.6 256l45.25 45.25l45.25-45.25l-45.25-45.25L278.6 256z"/></svg> -->
+          <!-- <div class="card-header">aasasas</div> -->
+          <h1 class="fs-1">Dreads</h1>
+          <p class="fs-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Distinctio, sed voluptates? Debitis, numquam nesciunt.
+          </p>
+
+          <!-- <a href="" class="btn btn-danger text-uppercase fw-bold my-1" role="button">dreads</a> -->
+        </div>
+
+        <div class="col-md-12 col-lg-4 px-5 pb-5" id="loss">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M503.2 393.8L280.1 44.25c-10.42-16.33-37.73-16.33-48.15 0L8.807 393.8c-11.11 17.41-11.75 39.42-1.666 57.45C17.07 468.1 35.92 480 56.31 480h399.4c20.39 0 39.24-11.03 49.18-28.77C514.9 433.2 514.3 411.2 503.2 393.8zM256 111.8L327.8 224H256L208 288L177.2 235.3L256 111.8z"/></svg> -->
+          <!-- <br> -->
+          <h1 class="fs-1">cosmeticos</h1>
+          <p class="fs-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perspiciatis sit ut natus repellat fuga.
+          </p>
+          <!-- <a href="" class="btn btn-danger text-uppercase fw-bold mx-1" role="button">cosmeticos</a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FIXME: questions -->
+
+    <section id="questions" class="mb-5">
+      <div class="container">
+        <h1 class="text-center text-light mb-4 text-capitalize">
+          tire suas Duvidas.
+        </h1>
+
+        <div class="accordion" id="Questions">
+          <!-- FIXME: Item 1º -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne">
+                #1º Como cuidar dele?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#Questions">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+
+          <!-- FIXME: Item 2º -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo">
+                #2º Onde posso o encontrar
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#Questions">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+
+          <!-- FIXME: Item 3º -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree">
+                #3º É Caro?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#Questions">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIXME: makers -->
+    <section id="makers" class="p-sm-5 py-5 mb-5">
+      <div class="container" id="agendar">
+        <h2 class="text-center text-light">Quem Vai lhe Atender?</h2>
+        <p class="lead text-center text-light">Nossos Dread Makers!</p>
+        <div class="row g-2">
+          <div class="col-sm-12 col-lg-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <img
+                  src="flavio.jpeg"
+                  class="rounded-circle mb-3"
+                  width="150px"
+                  height="150px"
+                  alt="" />
+                <br />
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-pinterest text-dark mx-1"></i></a>
+                <h3>Flavio Dreads</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae eos nam ratione beatae atque a.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger mt-3"
+                  style="font-weight: bold">
+                  Agendar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <img
+                  src="elisa-sem.jpeg"
+                  class="rounded-circle mb-3"
+                  width="150px"
+                  height="150px"
+                  alt="" />
+                <br />
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-whatsapp text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                <h3>Elisa Dreads Looks</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae eos nam ratione beatae atque a.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger mt-3"
+                  style="font-weight: bold">
+                  Agendar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIXME: contact && map -->
+    <section class="p-sm-5" id="map">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center text-light mb-4">
+              Onde Pode Nos Encontrar.
+            </h2>
+
+            <ul class="list-group list-group-flush lead text-capitalize">
+              <li class="list-group-item">
+                <span class="fw-bold">Localização Principal:</span> Abaete 498
+                Bonfim
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Nosso Contato:</span> (31) 9 9998-9995
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">nosso e-mail:</span> exemplo@mail.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">nossos fornecedores:</span> ...@mail.com
+                || (31) 999...
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">facebook:</span> exemplo@mail.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">patreon:</span> exemplo@mail.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">instagram:</span> exemplo@mail.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6">
+            <div id="mapbox">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d937.8152699004135!2d-43.9521161!3d-19.913400000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69751cab89c1f%3A0xa156e1ef35bb455c!2sR.%20Abaet%C3%A9%2C%20498%20-%20Bonfim%2C%20Belo%20Horizonte%20-%20MG%2C%2031210-390!5e0!3m2!1spt-BR!2sbr!4v1655423627312!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style="border-radius: 10px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIXME: footer -->
+    <footer class="text-center position-relative">
+      <div class="footer-content pt-4">
+        <div class="text-center">
+          <h3>Contate-nos</h3>
+          <p class="p-2 d-none">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+            perspiciatis veritatis iste ea. Cumque, voluptatem?
+          </p>
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+          </a>
+
+          <ul class="d-flex">
+            <li>
+              <a href="">ElisaDreadsLooks</a>
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </li>
+
+            <!-- flex é pra um do lado do outro -->
+
+            <li>
+              <a href="">FlavioDreadStudio</a>
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </li>
+          </ul>
+
+          <div class="footer-bottom">
+            <p class="lead">
+              Copyright &copy; 2022 Dreads. <br />
+              Feito Por
+              <span style="opacity: 0.5; text-decoration: underline">
+                Dreads
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

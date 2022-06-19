@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherish&family=Encode+Sans+SC:wght@100&family=Fredoka+One&family=Montserrat+Subrayada:wght@700&family=Paprika&family=Racing+Sans+One&family=Ranga&family=Rye&family=Sansita+Swashed:wght@500&family=Six+Caps&family=Sulphur+Point&family=Syncopate&family=Zilla+Slab+Highlight:wght@700&display=swap");
+@font-face {
+  font-family: "billy";
+  src: url(../BillionDreams_PERSONAL.ttf);
+}
+/*FIXME: cores*/
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background-color: #000;
+  font-family: "century gothic";
+}
+
+img {
+  max-width: 100%;
+}
+
+nav.navbar {
+  background-color: #111;
+}
+nav.navbar a#prog {
+  position: relative;
+  margin-left: 10px;
+}
+nav.navbar a#prog::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #6a4aa1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s ease-in;
+}
+nav.navbar a#prog:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+header#con {
+  font-family: courier;
+  padding: 0;
+  color: rgb(170, 65, 0);
+  outline: 5px solid black;
+}
+
+section#flex {
+  background-color: #000;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+section#flex div#peso {
+  color: white;
+}
+section#flex img {
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+section#flex div#peso {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  color: antiquewhite;
+}
+section#flex div#food {
+  text-transform: capitalize;
+  color: white;
+}
+section#flex div#food h1 {
+  letter-spacing: 0.2rem;
+  text-align: left;
+  padding: 10px 0px 10px 10px;
+}
+section#flex div#food p {
+  font-family: "century gothic";
+}
+section#flex div#natural {
+  text-transform: capitalize;
+  color: white;
+}
+section#flex div#natural h1 {
+  letter-spacing: 0.2rem;
+  text-align: left;
+  padding: 10px 0px 10px 10px;
+}
+section#flex div#natural p {
+  font-family: "century gothic";
+}
+section#flex div#loss {
+  text-transform: capitalize;
+  color: white;
+}
+section#flex div#loss h1 {
+  letter-spacing: 0.2rem;
+  text-align: left;
+  padding: 10px 0px 10px 10px;
+}
+section#flex div#loss p {
+  font-family: "century gothic";
+}
+
+section#questions img {
+  background-blend-mode: color-dodge;
+}
+section#questions .accordion .accordion-item {
+  background-color: #111;
+  border-color: #580000;
+  color: #fff;
+}
+section#questions .accordion-button::after {
+  background-color: #888;
+  border-radius: 10px;
+}
+section#questions .accordion-button {
+  font-size: 1.5rem;
+  background-color: #000;
+  color: white;
+}
+
+section#makers {
+  background-color: #000000;
+  color: white;
+}
+section#makers div.card {
+  background-color: transparent;
+  border: none;
+}
+section#makers div.card-body {
+  height: 400px;
+}
+
+@media (max-width: 400px) {
+  section#map ul {
+    margin: 0;
+  }
+}
+section#map ul li {
+  background-color: transparent;
+  border-color: #000;
+  color: #fff;
+}
+section#map div.col-lg-6 {
+  height: 400px;
+}
+section#map div.col-lg-6 #mapbox {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #111;
+  color: aliceblue;
+}
+footer div.footer-content div.container p.p-2 {
+  max-width: 520px;
+}
+footer ul {
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+footer ul a {
+  color: wheat;
+}
+footer ul li {
+  margin: 1rem 1rem 3rem 0;
+  border-color: red;
+}
+footer .footer-bottom {
+  background-color: #000;
+  padding: 5vh 0;
+}/*# sourceMappingURL=sussy.css.map */
