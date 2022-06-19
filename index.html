@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="sass/sussy.css" />
     <title>Projeto:Dreads;</title>
   </head>
-  <body class="" >
+  <body class="">
     <!--FIXME: navbar -->
 
     <nav class="navbar navbar-expand-md fs-4 navbar-dark fixed-top">
@@ -97,7 +97,7 @@
     <header class="container-fluid bg-light text-capitalize" id="con">
       <div
         id="carouselFade"
-        class="carousel slide " 
+        class="carousel slide"
         data-bs-touch="true"
         data-bs-interval="false">
         <div class="carousel-indicators">
@@ -200,7 +200,7 @@
 
           <h1 class="fs-1">artesanatos</h1>
 
-          <p class="fs-5 ">
+          <p class="fs-5">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
             possimus error eveniet dolorem itaque?
           </p>
@@ -211,19 +211,13 @@
             data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="1000">
-                <img
-                  src="img/billion-dream_poster01.png"
-                  alt="..." />
+                <img src="img/billion-dream_poster01.png" alt="..." />
               </div>
               <div class="carousel-item" data-bs-interval="1000">
-                <img
-                  src="img/billion-dream_poster02.png"
-                  alt="..." />
+                <img src="img/billion-dream_poster02.png" alt="..." />
               </div>
               <div class="carousel-item" data-bs-interval="1000">
-                <img
-                  src="img/billion-dream_flag.png"
-                  alt="..." />
+                <img src="img/billion-dream_flag.png" alt="..." />
               </div>
             </div>
             <button
@@ -388,7 +382,48 @@
         <h2 class="text-center text-light">Quem Vai lhe Atender?</h2>
         <p class="lead text-center text-light">Nossos Dread Makers!</p>
         <div class="row g-2">
-          <div class="col-sm-12 col-lg-6">
+          <!--FIXME: card alternativo-->
+          <div class="d-flex d-md-none">
+            <div class="card profile-header">
+              <div class="body">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="profile-image float-md-right " style="width: 100px; height: 100px; border-radius: 50%;  overflow: hidden;">
+                      <img
+                        src="flavio.jpeg"
+                        alt="" />
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <h4 class="m-t-0 m-b-0"><strong>Michael</strong> Deo</h4>
+                    <div>
+                      <button class="btn btn-primary btn-round btn-simple">
+                        Agendar
+                      </button>
+                    </div>
+                    <p class="social-icon m-t-5 m-b-0">
+                      <a title="Twitter" href="javascript:void(0);"
+                        ><i class="fa fa-twitter"></i
+                      ></a>
+                      <a title="Facebook" href="javascript:void(0);"
+                        ><i class="fa fa-facebook"></i
+                      ></a>
+                      <a title="Google-plus" href="javascript:void(0);"
+                        ><i class="fa fa-twitter"></i
+                      ></a>
+                      <a title="Behance" href="javascript:void(0);"
+                        ><i class="fa fa-behance"></i
+                      ></a>
+                      <a title="Instagram" href="javascript:void(0);"
+                        ><i class="fa fa-instagram"></i
+                      ></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 d-none d-md-flex">
             <div class="card">
               <div class="card-body text-center">
                 <img
