@@ -61,11 +61,11 @@ img {
 
 nav.navbar {
   background-color: #111;
-  a#prog {
+  a.nav-link {
     position: relative;
     margin-left: 10px;
   }
-  a#prog::after {
+  a.nav-link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -78,7 +78,7 @@ nav.navbar {
     transform-origin: right; // sem com ou de qualquer jeito fica incrivel...
     transition: transform 0.25s ease-in;
   }
-  a#prog:hover::after {
+  a.nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
   }

@@ -21,11 +21,11 @@ img {
 nav.navbar {
   background-color: #111;
 }
-nav.navbar a#prog {
+nav.navbar a.nav-link {
   position: relative;
   margin-left: 10px;
 }
-nav.navbar a#prog::after {
+nav.navbar a.nav-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -37,7 +37,7 @@ nav.navbar a#prog::after {
   transform-origin: right;
   transition: transform 0.25s ease-in;
 }
-nav.navbar a#prog:hover::after {
+nav.navbar a.nav-link:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
