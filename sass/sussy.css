@@ -42,7 +42,7 @@ nav.navbar a.nav-link:hover::after {
   transform-origin: left;
 }
 
-header#con {
+header {
   font-family: courier;
   padding: 0;
   color: rgb(170, 65, 0);
