@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cherish&family=Encode+Sans+SC:wght@100&family=Fredoka+One&family=Montserrat+Subrayada:wght@700&family=Paprika&family=Racing+Sans+One&family=Ranga&family=Rye&family=Sansita+Swashed:wght@500&family=Six+Caps&family=Sulphur+Point&family=Syncopate&family=Zilla+Slab+Highlight:wght@700&display=swap");
 @font-face {
-  font-family: "billy";
-  src: url(../BillionDreams_PERSONAL.ttf);
+  font-family: "Goth";
+  src: url(../font/SansSerifFLF/SansSerifFLF.otf);
 }
 /*FIXME: cores*/
 html {
@@ -11,7 +11,7 @@ html {
 
 body {
   background-color: #000;
-  font-family: "century gothic";
+  font-family: "century Gothic", "Goth", system-ui, -apple-system, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 img {
@@ -106,22 +106,35 @@ section#flex div#loss p {
   font-family: "century gothic";
 }
 
-section#questions img {
-  background-blend-mode: color-dodge;
+section#questions {
+  font-size: 1.25rem;
 }
 section#questions .accordion .accordion-item {
   background-color: #111;
-  border-color: #580000;
+  border-color: #999;
   color: #fff;
+}
+section#questions .accordion-button[aria-expanded=true] {
+  color: #00c9c8;
 }
 section#questions .accordion-button::after {
   background-color: #888;
   border-radius: 10px;
 }
 section#questions .accordion-button {
-  font-size: 1.5rem;
+  font-size: 2rem;
   background-color: #000;
   color: white;
+}
+@media only screen and (max-width: 768px) {
+  section#questions .accordion-button {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section#questions {
+    font-size: 1.2rem;
+  }
 }
 
 section#makers {

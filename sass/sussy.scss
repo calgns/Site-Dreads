@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherish&family=Encode+Sans+SC:wght@100&family=Fredoka+One&family=Montserrat+Subrayada:wght@700&family=Paprika&family=Racing+Sans+One&family=Ranga&family=Rye&family=Sansita+Swashed:wght@500&family=Six+Caps&family=Sulphur+Point&family=Syncopate&family=Zilla+Slab+Highlight:wght@700&display=swap');
 
 @font-face {
-  font-family: "billy";
-  src: url(../BillionDreams_PERSONAL.ttf);
+  font-family: 'Goth';
+  src: url(../font/SansSerifFLF/SansSerifFLF.otf);
 }
 
 /*FIXME: cores*/
@@ -25,7 +25,6 @@ $coolor-g4: #b87c4c;
 $coolor-g5: #e2b659;
 $coolor-g6: #f9f874;
 
-
 // $myCoolors-spot
 $coolor-s1: #000000;
 $coolor-s2: #303030;
@@ -40,8 +39,7 @@ $teste-s4: #9d0208;
 $teste-s5: #d00000;
 $teste-s6: #dc2f02;
 
-
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
@@ -49,8 +47,7 @@ html{
 body {
   // background-color: #212d39;
   background-color: #000;
-  font-family: "century gothic"; //  *Paprika* & Racing+Sans+One & **Rye** & /Sansita+Swashed:wght@500/ & *Syncopate* & Zilla+Slab+Highlight');
-
+  font-family: "century Gothic", "Goth", system-ui, -apple-system, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif; //  *Paprika* & Racing+Sans+One & **Rye** & /Sansita+Swashed:wght@500/ & *Syncopate* & Zilla+Slab+Highlight');
 }
 
 img {
@@ -66,7 +63,7 @@ nav.navbar {
     margin-left: 10px;
   }
   a.nav-link::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -108,27 +105,25 @@ header {
   //     background-color: black;
   //   }
   //   .carousel-caption {
-      
+
   //       color: #000;
-      
+
   //   }
   // }
 }
 
 // FIXME: flex
 
-
-
 section#flex {
   background-color: #000;
   padding: 0;
   margin: 0;
-  
-  div#peso{
+
+  div#peso {
     color: $cor-secundaria1;
   }
 
-  img{
+  img {
     padding: 10px;
     // margin: 10px;
     width: 300px;
@@ -139,23 +134,21 @@ section#flex {
   @mixin fileira {
     text-transform: capitalize;
     // font-style: italic;
-    
+
     h1 {
       // font-size: 3.5rem;
       // font-weight: bold;
       letter-spacing: 0.2rem;
-  
+
       text-align: left;
-      padding: 10px 0px 10px 10px; 
-  
+      padding: 10px 0px 10px 10px;
     }
-    
+
     p {
       // font-size: 1.3rem;
-      font-family: "century gothic"; //times new roman, helvetica, garamond, bodoni, century expanded, futura,
+      font-family: 'century gothic'; //times new roman, helvetica, garamond, bodoni, century expanded, futura,
     }
     color: $cor-secundaria1;
-    
   }
 
   div#peso {
@@ -163,126 +156,128 @@ section#flex {
     margin-bottom: 20px;
     padding-bottom: 20px;
     color: antiquewhite;
-
   }
 
-  div#food {@include fileira;}
+  div#food {
+    @include fileira;
+  }
 
-  div#natural {@include fileira;}
-  
-  div#loss {@include fileira;}
+  div#natural {
+    @include fileira;
+  }
 
+  div#loss {
+    @include fileira;
+  }
 }
 
 // FIXME: questions
 
 section#questions {
-  img{background-blend-mode: color-dodge;}
-  .accordion{    
+
+  .accordion {
     .accordion-item {
       background-color: #111;
-      border-color: #580000;
+      border-color: #999;
       color: #fff;
     }
-    
   }
- 
+
   // no .accordion-body
-      // use height: 120px;
-      // use overflow: auto;
-      //caso haja queira limitar o espaço
-  
+  // use height: 120px;
+  // use overflow: auto;
+  //caso haja queira limitar o espaço
+
+  .accordion-button[aria-expanded="true"] {
+    color: #00c9c8;
+  }
   .accordion-button::after {
     background-color: #888;
     border-radius: 10px;
   }
   .accordion-button {
-    font-size: 1.5rem;
-    // font-weight: bold;
-
-
+    font-size: 2rem;
     background-color: $cor-primaria1;
     color: $cor-secundaria1;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.6rem;
+    }
   }
-
+  
+  font-size: 1.25rem;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 }
 
-
 // FIXME: makers
-section#makers{
+section#makers {
   // background-color: #6a0202;
   background-color: $coolor-g1;
   // background-color: #222;
   // background-color: transparent;
   color: $cor-secundaria1;
 
-  div.card{
+  div.card {
     background-color: transparent;
     border: none;
   }
 
-  div.card-body{
+  div.card-body {
     height: 400px;
   }
 }
 
-
-
-
 // FIXME: MAP
-section#map{
-  ul{
-    @media (max-width:400px) {
+section#map {
+  ul {
+    @media (max-width: 400px) {
       margin: 0;
     }
 
-    li{
+    li {
       background-color: transparent;
       border-color: #000;
       color: #fff;
-      
     }
   }
-  div.col-lg-6{
+  div.col-lg-6 {
     height: 400px;
-    
-    #mapbox{
+
+    #mapbox {
       width: 100%;
       height: 100%;
     }
-
   }
 }
 
-
-footer{
+footer {
   margin-top: 100px;
   background-color: #111;
   color: aliceblue;
-  div.footer-content div.container{
-    p.p-2{
+  div.footer-content div.container {
+    p.p-2 {
       max-width: 520px;
       // margin: 0 auto;
     }
   }
 
-  ul{
-    a{ color: wheat;}
+  ul {
+    a {
+      color: wheat;
+    }
     align-items: center;
     justify-content: center;
     list-style: none;
-    li{
+    li {
       margin: 1rem 1rem 3rem 0;
       border-color: red;
-
     }
     padding: 0;
   }
 
-  .footer-bottom{
+  .footer-bottom {
     background-color: #000;
     padding: 5vh 0;
-
   }
-
 }
