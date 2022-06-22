@@ -1,0 +1,7 @@
+[
+	{ "link": "#", "label": "Galeria" },
+	{ "link": "#questions", "label": "Dúvidas" },
+	{ "link": "#agendar", "label": "Agendar" },
+	{ "link": "#outra_agendar", "label": "Agendar" },
+	{ "link": "#map", "label": "Endereço" }
+]
