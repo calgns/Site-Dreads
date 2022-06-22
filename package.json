@@ -1,0 +1,35 @@
+{
+	"name": "dreads",
+	"version": "1.0.0",
+	"description": "Site Dreads",
+	"main": "index.js",
+	"scripts": {
+		"deploy": "npm run prod && ./node_modules/.bin/gh-pages",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "npx webpack serve -o public_html --mode='development' -c ./webpack.config.js",
+		"prod": "npx webpack -o public_html --mode='production' -c ./webpack.config.js",
+		"watch": "npx webpack serve -o public_html --mode='development' -c ./webpack.config.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/calgns/Site-Dreads.git"
+	},
+	"keywords": [
+		"pugjs"
+	],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@webdiscus/pug-loader": "^1.8.0",
+		"html-webpack-plugin": "^5.5.0",
+		"lodash": "^4.17.21",
+		"pug-plugin": "^1.5.0",
+		"webpack": "^5.70.0",
+		"webpack-cli": "^4.10.0",
+		"webpack-dev-server": "^4.7.4"
+	},
+	"bugs": {
+		"url": "https://github.com/calgns/Site-Dreads/issues"
+	},
+	"homepage": "https://github.com/calgns/Site-Dreads#readme"
+}
