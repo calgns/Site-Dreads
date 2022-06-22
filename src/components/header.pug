@@ -1,1 +1,24 @@
-include menu.pug
+header.bg-light.text-capitalize
+	#carouselFade.carousel.slide(data-bs-touch="true", data-bs-interval="false")
+		.carousel-indicators
+			button.active(type="button", data-bs-target="#carouselFade", data-bs-slide-to="0", aria-current="true", aria-label="Slide 1")
+			button(type="button", data-bs-target="#carouselFade", data-bs-slide-to="1", aria-label="Slide 2")
+		.carousel-inner
+			.carousel-item.active(data-bs-interval="10000")
+				div
+				.carousel-caption.d-none.d-md-block
+					h5 First slide label
+					p
+						| Some representative placeholder content for the first slide.
+		//- 	.carousel-item(data-bs-interval="2000")
+		//- 		img(src="https://picsum.photos/id/107/1200/500", style="width: 100%", alt=)
+		//- 		.carousel-caption.d-none.d-md-block
+		//- 			h5 Second slide label
+		//- 			p
+		//- 				| Some representative placeholder content for the second slide.
+		//- button.carousel-control-prev(type="button", data-bs-target="#carouselFade", data-bs-slide="prev")
+		//- 	span.carousel-control-prev-icon(aria-hidden="true")
+		//- 	span.visually-hidden Previous
+		//- button.carousel-control-next(type="button", data-bs-target="#carouselFade", data-bs-slide="next")
+		//- 	span.carousel-control-next-icon(aria-hidden="true")
+		//- 	span.visually-hidden Next

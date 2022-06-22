@@ -1,14 +1,16 @@
 nav.navbar.navbar-expand-md.fs-4.navbar-dark.fixed-top
 	.container-fluid
-		a.navbar-brand.fs-3(href='#') Navbar
+		a.navbar-brand.fs-3(href="#") Navbar
+		button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarNavDropdown", aria-controls="navbarNavDropdown", aria-expanded="false", aria-label="Toggle navigation")
+			span.navbar-toggler-icon
 		#navbarNavDropdown.collapse.navbar-collapse.justify-content-end
 			ul.navbar-nav
 				li.nav-item
-					a.nav-link.active(aria-current='page', href='#')
+					a.nav-link.active(aria-current="page", href="#")
 						| Galeria
 				li.nav-item
-					a.nav-link(href='#questions') D&uacute;vidas
+					a.nav-link(href="#questions") Dúvidas
 				li.nav-item
-					a.nav-link(href='#agendar')  Agendar 
+					a.nav-link(href="#agendar")  Agendar 
 				li.nav-item
-					a.nav-link(href='#map') Endere&ccedil;o
+					a.nav-link(href="#map") Endereço

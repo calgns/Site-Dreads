@@ -1,11 +1,12 @@
 doctype html
-html(style="background-color:#f44")
+html
     head
         include ../components/head.pug
     body
         //- - const links = require("../includes/menus.json");
         //- - const data = require("../includes/dados.json");
         block header
+            include ../components/menu.pug
             include ../components/header.pug
         block content
             h1 My Site
