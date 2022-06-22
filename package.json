@@ -1,35 +1,40 @@
 {
-	"name": "dreads",
+	"name": "sitedreads",
 	"version": "1.0.0",
-	"description": "Site Dreads",
-	"main": "index.js",
+	"description": "",
+	"private": true,
 	"scripts": {
-		"deploy": "npm run prod && ./node_modules/.bin/gh-pages",
+		"deploy": "npm run prod && ./node_modules/.bin/gh-pages -d public_html",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "npx webpack serve -o public_html --mode='development' -c ./webpack.config.js",
 		"prod": "npx webpack -o public_html --mode='production' -c ./webpack.config.js",
 		"watch": "npx webpack serve -o public_html --mode='development' -c ./webpack.config.js"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/calgns/Site-Dreads.git"
-	},
-	"keywords": [
-		"pugjs"
-	],
+	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"@webdiscus/pug-loader": "^1.8.0",
+		"copy-webpack-plugin": "^10.2.4",
+		"css-loader": "^6.7.1",
+		"file-loader": "^6.2.0",
 		"html-webpack-plugin": "^5.5.0",
 		"lodash": "^4.17.21",
 		"pug-plugin": "^1.5.0",
+		"purify-css": "^1.2.5",
+		"resolve-url-loader": "^5.0.0",
+		"sass": "^1.49.9",
+		"sass-loader": "^12.6.0",
+		"style-loader": "^3.3.1",
+		"url-loader": "^4.1.1",
 		"webpack": "^5.70.0",
-		"webpack-cli": "^4.10.0",
+		"webpack-cli": "^4.9.2",
 		"webpack-dev-server": "^4.7.4"
 	},
-	"bugs": {
-		"url": "https://github.com/calgns/Site-Dreads/issues"
-	},
-	"homepage": "https://github.com/calgns/Site-Dreads#readme"
+	"dependencies": {
+		"currency-formatter": "^1.5.9",
+		"vue-loader": "^17.0.0",
+		"vue-loader-plugin": "^1.3.0",
+		"vue-template-compiler": "^2.6.14"
+	}
 }
