@@ -1,0 +1,104 @@
+
+// FIXME: makers
+section#makers.p-sm-5.py-5.mb-5
+  #agendar.container
+    h2.text-center.text-light Quem Vai lhe Atender?
+    p.lead.text-center.text-light Nossos Dread Makers!
+    .row.g-2
+      // FIXME: card mobile flavio
+      .d-flex.d-lg-none.my-5
+        .card.profile-header
+          .body
+            .row
+              .col-4
+                .profile-image.float-md-right(style='\
+                width: 100px;\
+                height: 100px;\
+                border-radius: 50%;\
+                overflow: hidden;\
+                ')
+                  img(src='../img/flavio-sem.jpeg', alt='')
+              .col-8
+                h4.m-t-0.m-b-0
+                  strong Michael Deo
+                span.job_post Ui UX Designer
+                p
+                  | 795 Folsom Ave, Suite 600 San Francisco, CADGE 94107
+                  br
+                  a(title='facebook', href='#')
+                    i.bi.bi-facebook.mx-1
+                  a(href='#')
+                    i.bi.bi-twitter.mx-1
+                  a(href='#')
+                    i.bi.bi-pinterest.mx-1
+                div
+                  button.btn.btn-primary.btn-round.btn-simple Agendar
+
+      // FIXME: card mobile elisa
+      .d-flex.d-lg-none
+        .card.profile-header
+          .body
+            .row
+              .col-4
+                .profile-image.float-md-right
+                  img(src='../img/elisa-sem.jpeg', style='\
+                  width: 106px;\
+                  height: 100px;\
+                  border-radius: 50%;\
+                  overflow: hidden;\
+                  ', alt='')
+              .col-8
+                h4.m-t-0.m-b-0
+                  strong Michael Deo
+                span.job_post Ui UX Designer
+                p 795 Folsom Ave, Suite 600 San Francisco, CADGE 94107
+                div
+                  button.btn.btn-primary.btn-round.btn-simple Agendar
+                p.social-icon.m-t-5.m-b-0
+                  a(title='Twitter', href='javascript:void(0);')
+                    i.fa.fa-twitter
+                  a(title='Facebook', href='javascript:void(0);')
+                    i.fa.fa-facebook
+                  a(title='Google-plus', href='javascript:void(0);')
+                    i.fa.fa-twitter
+                  a(title='Behance', href='javascript:void(0);')
+                    i.fa.fa-behance
+                  a(title='Instagram', href='javascript:void(0);')
+                    i.fa.fa-instagram
+
+      // FIXME: flavio
+      .col-6.d-none.d-lg-flex
+        .card
+          .card-body.text-center
+            img.rounded-circle.mb-3(src='../img/flavio-sem.jpeg', alt='', width='150px', height='150px')
+            br
+            a(href='#')
+              i.bi.bi-facebook.text-dark.mx-1
+            a(href='#')
+              i.bi.bi-twitter.text-dark.mx-1
+            a(href='#')
+              i.bi.bi-pinterest.text-dark.mx-1
+            h3 Flavio Dreads
+            p.card-text
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              | Recusandae eos nam ratione beatae atque a.
+            button.btn.btn-outline-danger.mt-3(type='button', style='font-weight: bold')
+              | Agendar
+      // FIXME: elisa
+      .col-6.d-none.d-lg-flex
+        .card
+          .card-body.text-center
+            img.rounded-circle.mb-3(src='../img/elisa-sem.jpeg', alt='', width='150px', height='150px')
+            br
+            a(href='#')
+              i.bi.bi-facebook.text-dark.mx-1
+            a(href='#')
+              i.bi.bi-whatsapp.text-dark.mx-1
+            a(href='#')
+              i.bi.bi-instagram.text-dark.mx-1
+            h3 Elisa Dreads Looks
+            p.card-text
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              | Recusandae eos nam ratione beatae atque a.
+            button.btn.btn-outline-danger.mt-3(type='button', style='font-weight: bold')
+              | Agendar
