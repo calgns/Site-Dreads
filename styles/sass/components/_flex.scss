@@ -1,0 +1,56 @@
+@use "../abstracts/colors" as *;
+
+section#flex {
+  background-color: $cor-fundo;
+  padding: 0;
+  margin: 0;
+  
+  div#peso{
+    color: $cor-texto;
+  }
+
+  img{
+    padding: 10px;
+    // margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  @mixin fileira {
+    text-transform: capitalize;
+    // font-style: italic;
+    
+    h1 {
+      // font-size: 3.5rem;
+      // font-weight: bold;
+      letter-spacing: 0.2rem;
+  
+      text-align: left;
+      padding: 10px 0px 10px 10px; 
+  
+    }
+    
+    p {
+      // font-size: 1.3rem;
+      font-family: "century gothic"; //times new roman, helvetica, garamond, bodoni, century expanded, futura,
+    }
+    color: $cor-texto;
+    
+  }
+
+  div#peso {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: antiquewhite;
+
+  }
+
+  div#food {@include fileira;}
+
+  div#natural {@include fileira;}
+  
+  div#loss {@include fileira;}
+
+}

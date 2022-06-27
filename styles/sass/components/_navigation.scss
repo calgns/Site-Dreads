@@ -1,0 +1,33 @@
+@use "../abstracts/colors" as *;
+
+nav.navbar {
+  background-color: $cor-nav;
+  a.nav-link {
+    position: relative;
+    margin-left: 10px;
+  }
+  a.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $cor-nav-after;
+
+    transform: scaleX(0);
+    transform-origin: right; // sem com ou de qualquer jeito fica incrivel...
+    transition: transform 0.25s ease-in;
+  }
+  a.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+header {
+  font-family: courier;
+  padding: 0;
+  color: rgb(170, 65, 0);
+  // outline: 5px solid black;
+}

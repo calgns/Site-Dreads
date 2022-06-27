@@ -1,0 +1,32 @@
+@use "../abstracts/colors" as *;
+
+section#questions {
+  // img{background-blend-mode: color-dodge;}
+  .accordion{    
+    .accordion-item {
+      background-color: $cor-nav;
+      border-color: #ccc;
+      color: $cor-texto;
+    }
+    
+  }
+ 
+  // no .accordion-body
+      // use height: 120px;
+      // use overflow: auto;
+      //caso haja queira limitar o espaço
+  
+  .accordion-button::after {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  .accordion-button {
+    font-size: 1.5rem;
+    // font-weight: bold;
+
+
+    background-color: $cor-fundo;
+    color: $cor-texto;
+  }
+
+}

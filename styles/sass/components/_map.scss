@@ -1,0 +1,25 @@
+@use "../abstracts/colors" as *;
+
+section#map{
+  ul{
+    @media (max-width:400px) {
+      margin: 0;
+    }
+
+    li{
+      background-color: transparent;
+      border-color: $cor-fundo;
+      color: $cor-texto;
+      
+    }
+  }
+  div.col-lg-6{
+    height: 400px;
+    
+    #mapbox{
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+}

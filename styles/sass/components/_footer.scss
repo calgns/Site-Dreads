@@ -1,0 +1,33 @@
+@use "../abstracts/colors" as *;
+
+footer{
+  margin-top: 100px;
+  background-color: $cor-nav;
+  color: aliceblue;
+  div.footer-content div.container{
+    p.p-2{
+      max-width: 520px;
+      // margin: 0 auto;
+    }
+  }
+
+  ul{
+    a{ color: wheat;}
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    li{
+      margin: 1rem 1rem 3rem 0;
+      border-color: red;
+
+    }
+    padding: 0;
+  }
+
+  .footer-bottom{
+    background-color: $cor-fundo;
+    padding: 5vh 0;
+
+  }
+
+}
