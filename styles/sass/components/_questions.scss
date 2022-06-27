@@ -1,21 +1,29 @@
-@use "../abstracts/colors" as *;
+@use '../abstracts/colors' as *;
 
 section#questions {
-  // img{background-blend-mode: color-dodge;}
-  .accordion{    
+
+   font-size: 1.25rem;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+
+  .accordion {
     .accordion-item {
       background-color: $cor-nav;
       border-color: #ccc;
       color: $cor-texto;
     }
-    
   }
- 
+
   // no .accordion-body
-      // use height: 120px;
-      // use overflow: auto;
-      //caso haja queira limitar o espaço
-  
+  // use height: 120px;
+  // use overflow: auto;
+  //caso haja queira limitar o espaço
+
+  .accordion-button[aria-expanded='true'] {
+    color: #00c9c8;
+  }
+
   .accordion-button::after {
     background-color: #888;
     border-radius: 10px;
@@ -24,9 +32,10 @@ section#questions {
     font-size: 1.5rem;
     // font-weight: bold;
 
-
     background-color: $cor-fundo;
     color: $cor-texto;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.6rem;
+    }
   }
-
 }
