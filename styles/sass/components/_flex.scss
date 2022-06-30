@@ -1,5 +1,11 @@
 @use "../abstracts/colors" as *;
 
+
+@font-face {
+  font-family: sansSerifFLFBold;
+  src: url(../../../fonts/sansSerifFLF/SansSerifFLF-Demibold.otf);
+}
+
 section#flex {
   background-color: $cor-fundo;
   padding: 0;
@@ -38,6 +44,7 @@ section#flex {
   }
 
   div#fotos {
+    font-family: sansSerifFLFBold;
     margin: 0 auto;
     margin-bottom: 20px;
     padding-bottom: 20px;
