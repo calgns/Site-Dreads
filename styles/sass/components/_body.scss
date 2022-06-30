@@ -1,14 +1,19 @@
 @use "../abstracts/colors" as *;
 
+@font-face {
+  font-family: sansSerifFLF;
+  src: url(../../../fonts/sansSerifFLF/SansSerifFLF.otf);
+}
+
 html{
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
 
 body {
-  // background-color: #212d39;
   background-color: $cor-fundo;
-  font-family: "century gothic"; //  *Paprika* & Racing+Sans+One & **Rye** & /Sansita+Swashed:wght@500/ & *Syncopate* & Zilla+Slab+Highlight');
+  // font-family: "century gothic"; 
+  font-family: sansSerifFLF; 
 
 }
 
