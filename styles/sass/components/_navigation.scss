@@ -1,7 +1,14 @@
 @use "../abstracts/colors" as *;
 
+
+@font-face {
+  font-family: sansSerifFLFBold;
+  src: url(../../../fonts/sansSerifFLF/SansSerifFLF-Demibold.otf);
+}
+
 nav.navbar {
   background-color: $cor-nav;
+  font-family: sansSerifFLFBold;
   a.nav-link {
     position: relative;
     margin-left: 10px;
@@ -23,11 +30,4 @@ nav.navbar {
     transform: scaleX(1);
     transform-origin: left;
   }
-}
-
-header {
-  font-family: courier;
-  padding: 0;
-  color: rgb(170, 65, 0);
-  outline: 5px solid black;
 }
