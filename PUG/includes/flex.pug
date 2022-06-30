@@ -1,11 +1,13 @@
 
 // FIXME: FLEXBOX
-section#flex.container-fluid.mb-5.text-center
+section#flex.container.mb-5.text-center.mx-auto
+  
   .row.g-0
-    #peso.col.pt-5
+    #fotos.col.pt-5
       h1.fw-bold.text-capitalize Mais fotos?
+  
   .row.g-0
-    #food.col-md-12.col-lg-4.px-5.pb-5
+    #artesanatos.col-md-12.col-lg-4.px-1.pb-1
       h1.fs-1 artesanatos
       p.fs-5
         | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
@@ -24,13 +26,44 @@ section#flex.container-fluid.mb-5.text-center
         button.carousel-control-next(type='button' data-bs-target='#carouselArt' data-bs-slide='next')
           span.carousel-control-next-icon(aria-hidden='true')
           span.visually-hidden Next
-    #natural.col-md-12.col-lg-4.px-5.pb-5
+
+    #dreads.col-md-12.col-lg-4.px-1.pb-1
       h1.fs-1 Dreads
       p.fs-5
         | Lorem ipsum dolor',' sit amet consectetur adipisicing elit.
         | Distinctio, sed voluptates? Debitis, numquam nesciunt.
-    #loss.col-md-12.col-lg-4.px-5.pb-5
+      #carouselArt.carousel.slide(data-bs-ride="carousel" )
+        .carousel-inner
+          .carousel-item.active(data-bs-interval='5000')
+            img(src='../img/billion-dream_poster01.png' alt='...')
+          .carousel-item(data-bs-interval='5000')
+            img(src='../img/billion-dream_poster02.png' alt='...')
+          .carousel-item(data-bs-interval='5000')
+            img(src='../img/billion-dream_flag.png' alt='...')
+        button.carousel-control-prev(type='button' data-bs-target='#carouselArt' data-bs-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.visually-hidden Previous
+        button.carousel-control-next(type='button' data-bs-target='#carouselArt' data-bs-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.visually-hidden Next
+   
+    #cosmeticos.col-md-12.col-lg-4.px-1.pb-1
       h1.fs-1 cosmeticos
       p.fs-5
         | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         | Perspiciatis sit ut natus repellat fuga.
+     
+      #carouselArt.carousel.slide(data-bs-ride="carousel" )
+        .carousel-inner
+          .carousel-item.active(data-bs-interval='5000')
+            img(src='../img/billion-dream_poster01.png' alt='...')
+          .carousel-item(data-bs-interval='5000')
+            img(src='../img/billion-dream_poster02.png' alt='...')
+          .carousel-item(data-bs-interval='5000')
+            img(src='../img/billion-dream_flag.png' alt='...')
+        button.carousel-control-prev(type='button' data-bs-target='#carouselArt' data-bs-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.visually-hidden Previous
+        button.carousel-control-next(type='button' data-bs-target='#carouselArt' data-bs-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.visually-hidden Next
