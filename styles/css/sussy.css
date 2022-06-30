@@ -1,3 +1,7 @@
+@font-face {
+  font-family: sansSerifFLF;
+  src: url(../../../fonts/sansSerifFLF/SansSerifFLF.otf);
+}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
@@ -5,15 +9,20 @@ html {
 
 body {
   background-color: #000;
-  font-family: "century gothic";
+  font-family: sansSerifFLF;
 }
 
 img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: sansSerifFLFBold;
+  src: url(../../../fonts/sansSerifFLF/SansSerifFLF-Demibold.otf);
+}
 nav.navbar {
   background-color: #111;
+  font-family: sansSerifFLFBold;
 }
 nav.navbar a.nav-link {
   position: relative;
@@ -42,13 +51,28 @@ header {
   color: rgb(170, 65, 0);
   outline: 5px solid black;
 }
+header .gallery-images {
+  width: 100%;
+  margin-top: 50px;
+  min-height: 300px;
+  height: 500px;
+  max-height: 45vw;
+  background-size: contain;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+@font-face {
+  font-family: sansSerifFLFBold;
+  src: url(../../../fonts/sansSerifFLF/SansSerifFLF-Demibold.otf);
+}
 section#flex {
   background-color: #000;
   padding: 0;
   margin: 0;
 }
-section#flex div#peso {
+section#flex div#fotos {
   color: white;
 }
 section#flex img {
@@ -57,46 +81,56 @@ section#flex img {
   height: 300px;
   border-radius: 50%;
 }
-section#flex div#peso {
+section#flex div#fotos {
+  font-family: sansSerifFLFBold;
   margin: 0 auto;
   margin-bottom: 20px;
   padding-bottom: 20px;
   color: antiquewhite;
 }
-section#flex div#food {
+section#flex div#artesanatos {
   text-transform: capitalize;
   color: white;
 }
-section#flex div#food h1 {
-  letter-spacing: 0.2rem;
-  text-align: left;
-  padding: 10px 0px 10px 10px;
+section#flex div#artesanatos h1 {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px 0;
 }
-section#flex div#food p {
+section#flex div#artesanatos p {
+  margin: 10px auto;
+  max-width: 21rem;
+  text-align: auto;
   font-family: "century gothic";
 }
-section#flex div#natural {
+section#flex div#dreads {
   text-transform: capitalize;
   color: white;
 }
-section#flex div#natural h1 {
-  letter-spacing: 0.2rem;
-  text-align: left;
-  padding: 10px 0px 10px 10px;
+section#flex div#dreads h1 {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px 0;
 }
-section#flex div#natural p {
+section#flex div#dreads p {
+  margin: 10px auto;
+  max-width: 21rem;
+  text-align: auto;
   font-family: "century gothic";
 }
-section#flex div#loss {
+section#flex div#cosmeticos {
   text-transform: capitalize;
   color: white;
 }
-section#flex div#loss h1 {
-  letter-spacing: 0.2rem;
-  text-align: left;
-  padding: 10px 0px 10px 10px;
+section#flex div#cosmeticos h1 {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px 0;
 }
-section#flex div#loss p {
+section#flex div#cosmeticos p {
+  margin: 10px auto;
+  max-width: 21rem;
+  text-align: auto;
   font-family: "century gothic";
 }
 
@@ -134,6 +168,12 @@ section#questions .accordion-button {
 section#makers {
   background-color: #000;
   color: white;
+}
+section#makers .profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 section#makers div.card {
   background-color: transparent;
