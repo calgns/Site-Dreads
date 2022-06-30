@@ -1,18 +1,25 @@
-@use "../abstracts/colors" as *;
+@use '../abstracts/colors' as *;
 
-section#makers{
+section#makers {
   // background-color: #6a0202;
   background-color: $cor-fundo;
   // background-color: #222;
   // background-color: transparent;
   color: $cor-texto;
 
-  div.card{
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  div.card {
     background-color: transparent;
     border: none;
   }
 
-  div.card-body{
+  div.card-body {
     height: 400px;
   }
 }
