@@ -1,3 +1,18 @@
+mixin carousel(slide)
+  button.carousel-control-prev(type='button' data-bs-target=`${slide}` data-bs-slide='prev')
+    span.carousel-control-prev-icon(aria-hidden='true')
+    span.visually-hidden Previous
+  button.carousel-control-next(type='button' data-bs-target=`${slide}` data-bs-slide='next')
+    span.carousel-control-next-icon(aria-hidden='true')
+    span.visually-hidden Next
+
+-
+  const Artid = ["carouselArt"];
+  
+  const Dreid = ["carouselDre"];
+
+  const Cosid = ["carouselCos"];
+
 
 // FIXME: FLEXBOX
 section#flex.container.mb-5.text-center.mx-auto
@@ -9,9 +24,9 @@ section#flex.container.mb-5.text-center.mx-auto
   .row.g-0
     #artesanatos.col-md-12.col-lg-4.px-1.pb-1
       h1.fs-1 artesanatos
-      p.fs-5
-        | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-        | possimus error eveniet dolorem itaque?  
+      p.fs-5.
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
+         possimus error eveniet dolorem itaque?  
       a.btn.btn-outline-secondary encomendar
 
       #carouselArt.carousel.slide(data-bs-ride="carousel" )
@@ -22,18 +37,14 @@ section#flex.container.mb-5.text-center.mx-auto
             img(src='../img/billion-dream_poster02.png' alt='...')
           .carousel-item(data-bs-interval='5000')
             img(src='../img/billion-dream_flag.png' alt='...')
-        button.carousel-control-prev(type='button' data-bs-target='#carouselArt' data-bs-slide='prev')
-          span.carousel-control-prev-icon(aria-hidden='true')
-          span.visually-hidden Previous
-        button.carousel-control-next(type='button' data-bs-target='#carouselArt' data-bs-slide='next')
-          span.carousel-control-next-icon(aria-hidden='true')
-          span.visually-hidden Next
+        each id in Artid
+          +carousel(id)
 
     #dreads.col-md-12.col-lg-4.px-1.pb-1
       h1.fs-1 Dreads
-      p.fs-5
-        | Lorem ipsum dolor',' sit amet consectetur adipisicing elit.
-        | Distinctio, sed voluptates? Debitis, numquam nesciunt.
+      p.fs-5.
+         Lorem ipsum dolor',' sit amet consectetur adipisicing elit.
+         Distinctio, sed voluptates? Debitis, numquam nesciunt.
       a.btn.btn-outline-altsecondary encomendar
       
       #carouselDre.carousel.slide(data-bs-ride="carousel" )
@@ -44,18 +55,14 @@ section#flex.container.mb-5.text-center.mx-auto
             img(src='../img/billion-dream_poster02.png' alt='...')
           .carousel-item(data-bs-interval='5000')
             img(src='../img/billion-dream_flag.png' alt='...')
-        button.carousel-control-prev(type='button' data-bs-target='#carouselDre' data-bs-slide='prev')
-          span.carousel-control-prev-icon(aria-hidden='true')
-          span.visually-hidden Previous
-        button.carousel-control-next(type='button' data-bs-target='#carouselDre' data-bs-slide='next')
-          span.carousel-control-next-icon(aria-hidden='true')
-          span.visually-hidden Next
+        each id in Dreid
+          +carousel(id)
    
     #cosmeticos.col-md-12.col-lg-4.px-1.pb-1
       h1.fs-1 cosmeticos
-      p.fs-5
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        | Perspiciatis sit ut natus repellat fuga.
+      p.fs-5.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Perspiciatis sit ut natus repellat fuga.
       a.btn.btn-outline-altdark encomendar
      
       #carouselCos.carousel.slide(data-bs-ride="carousel" )
@@ -66,9 +73,5 @@ section#flex.container.mb-5.text-center.mx-auto
             img(src='../img/billion-dream_poster02.png' alt='...')
           .carousel-item(data-bs-interval='5000')
             img(src='../img/billion-dream_flag.png' alt='...')
-        button.carousel-control-prev(type='button' data-bs-target='#carouselCos' data-bs-slide='prev')
-          span.carousel-control-prev-icon(aria-hidden='true')
-          span.visually-hidden Previous
-        button.carousel-control-next(type='button' data-bs-target='#carouselCos' data-bs-slide='next')
-          span.carousel-control-next-icon(aria-hidden='true')
-          span.visually-hidden Next
+        each id in Cosid
+          +carousel(id)

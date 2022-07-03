@@ -1,46 +1,49 @@
+mixin buttons(btn)
+  button(type='button' data-bs-target='#carouselFade' data-bs-slide-to=`${btn.dataBS}` aria-label=`${btn.ariaLabel}`)
+
+mixin carouselItem(IMG)
+  .carousel-item(data-bs-interval="5000")
+    .gallery-images(style=`background-image: url(${IMG.src});`)
+
+-
+  const nums = [
+    {"dataBS": "1", "ariaLabel": "Slide 2"},
+    {"dataBS": "2", "ariaLabel": "Slide 3"},
+    {"dataBS": "3", "ariaLabel": "Slide 4"},
+    {"dataBS": "4", "ariaLabel": "Slide 5"},
+    {"dataBS": "5", "ariaLabel": "Slide 6"},
+    {"dataBS": "6", "ariaLabel": "Slide 7"},
+    {"dataBS": "7", "ariaLabel": "Slide 8"},
+    {"dataBS": "8", "ariaLabel": "Slide 9"}
+  ]
+-
+  const images = [
+    {"src": "../img/jooj1.jpeg"},
+    {"src": '../img/jooj2.jpeg'},
+    {"src": '../img/jooj3.jpeg'},
+    {"src": '../img/jooj4.jpeg'},
+    {"src": '../img/jooj5.jpeg'},
+    {"src": '../img/flavio.jpeg'},
+    {"src": '../img/flavio-sem.jpeg'},
+    {"src": '../img/jooj6.jpeg'}
+  ]
+
 
 // FIXME: cabeçalho
 header.bg-light.text-capitalize
   #carouselFade.carousel.slide(data-bs-touch='true' data-bs-interval='false')
     .carousel-indicators
       button.active(type='button' data-bs-target='#carouselFade' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
-      button(type='button' data-bs-target='#carouselFade' data-bs-slide-to='1' aria-label='Slide 2')
-      button(type='button' data-bs-target='#carouselDark' data-bs-slide-to='2' aria-label='Slide 3')
-      button(type='button' data-bs-target='#carouselDark' data-bs-slide-to='3' aria-label='Slide 4')
-      button(type='button' data-bs-target='#carouselDark' data-bs-slide-to='4' aria-label='Slide 5')
-      button(type='button' data-bs-target='#carouselDark' data-bs-slide-to='5' aria-label='Slide 6')
-      button(type='button' data-bs-target='#carouselDark' data-bs-slide-to='6' aria-label='Slide 7')
-      button(type='button' data-bs-target='#carouselDark' data-bs-slide-to='7' aria-label='Slide 8')
-      button(type='button' data-bs-target='#carouselDark' data-bs-slide-to='8' aria-label='Slide 9')
-    
+      each num in nums 
+        +buttons(num)
+
     .carousel-inner
       .carousel-item.active(data-bs-interval='10000')
         div.gallery-images(style="background-image: url('../img/elisa-sem.jpeg');")
-        
-      .carousel-item(data-bs-interval='2000')
-        div.gallery-images(style="background-image: url('../img/jooj1.jpeg');")
-        
-      .carousel-item(data-bs-interval='2000')
-        div.gallery-images(style="background-image: url('../img/jooj2.jpeg');")
-        
-      .carousel-item(data-bs-interval='2000')
-        div.gallery-images(style="background-image: url('../img/jooj3.jpeg');")
-        
-      .carousel-item(data-bs-interval='2000')
-        div.gallery-images(style="background-image: url('../img/jooj4.jpeg');")
-        
-      .carousel-item(data-bs-interval='2000')
-        div.gallery-images(style="background-image: url('../img/jooj5.jpeg');")
-        
-      .carousel-item(data-bs-interval='2000')
-        div.gallery-images(style="background-image: url('../img/flavio.jpeg');")
-        
-      .carousel-item(data-bs-interval='2000')
-        div.gallery-images(style="background-image: url('../img/flavio-sem.jpeg');")
-        
-      .carousel-item(data-bs-interval='2000')
-        div.gallery-images(style="background-image: url('../img/jooj6.jpeg');")
-        
+      
+      each img in images
+        +carouselItem(img)
+
     button.carousel-control-prev(type='button' data-bs-target='#carouselFade' data-bs-slide='prev')
       span.carousel-control-prev-icon(aria-hidden='true')
       span.visually-hidden Previous

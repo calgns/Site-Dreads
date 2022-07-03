@@ -1,3 +1,19 @@
+mixin listas(li) 
+  li.list-group-item
+    span.fw-bold #{li.info} 
+    span #{li.forma} 
+
+// info = informação; forma que está sendo apresentada
+
+-
+  const lis = [
+    {"info": "Nosso Contato:", "forma":"(31) 9 9998-9995"},
+    {"info": "nosso e-mail:", "forma":"exemplo@mail.com"},
+    {"info": "nossos fornecedores:", "forma":"...@mail.com|| (31) 999..."},
+    {"info": "facebook:", "forma":"exemplo@mail.com"},
+    {"info": "patreon:", "forma":"exemplo@mail.com"},
+    {"info": "instagram:", "forma":"exemplo@mail.com"}
+  ]
 
 // FIXME: contact && map
 section#map.p-sm-5
@@ -10,24 +26,10 @@ section#map.p-sm-5
           li.list-group-item
             span.fw-bold Localiza&ccedil;&atilde;o Principal:
             |  Abaete 498 Bonfim
-          li.list-group-item
-            span.fw-bold Nosso Contato:
-            |  (31) 9 9998-9995
-          li.list-group-item
-            span.fw-bold nosso e-mail:
-            |  exemplo@mail.com
-          li.list-group-item
-            span.fw-bold nossos fornecedores:
-            |  ...@mail.com|| (31) 999...
-          li.list-group-item
-            span.fw-bold facebook:
-            |  exemplo@mail.com
-          li.list-group-item
-            span.fw-bold patreon:
-            |  exemplo@mail.com
-          li.list-group-item
-            span.fw-bold instagram:
-            |  exemplo@mail.com
+
+          each li in lis 
+            +listas(li)
+
       .col-lg-6
         #mapbox
           iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d937.8152699004135!2d-43.9521161!3d-19.913400000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69751cab89c1f%3A0xa156e1ef35bb455c!2sR.%20Abaet%C3%A9%2C%20498%20-%20Bonfim%2C%20Belo%20Horizonte%20-%20MG%2C%2031210-390!5e0!3m2!1spt-BR!2sbr!4v1655423627312!5m2!1spt-BR!2sbr' style='border-radius: 10px' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade' width='100%' height='100%')
