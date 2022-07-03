@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/css/sussy.css">
     <title>Dreadsbh</title>
   </head>
-  <body> 
+  <body class="bg-dark"> 
     <!-- FIXME: navbar-->
     <nav class="navbar navbar-expand-md fs-4 navbar-dark fixed-top">
       <div class="container"><a class="navbar-brand fs-3" href="#">Dreadsbh</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Galeria</a></li>
-            <li class="nav-item"><a class="nav-link" href="#questions">D&uacute;vidas</a></li>
-            <li class="nav-item"><a class="nav-link" href="#agendar"> Agendar </a></li>
-            <li class="nav-item"><a class="nav-link" href="#map">Endere&ccedil;o</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="Galeria" href="#">Galeria</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="Perguntas" href="#questions">D&uacute;vidas</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="Agendar" href="#agendar"> Agendar </a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="Mapa" href="#map">Endere&ccedil;o</a></li>
           </ul>
         </div>
       </div>
@@ -30,43 +29,43 @@
       <div class="carousel slide" id="carouselFade" data-bs-touch="true" data-bs-interval="false">
         <div class="carousel-indicators">
           <button class="active" type="button" data-bs-target="#carouselFade" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
-          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
-          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="8" aria-label="Slide 9"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <div class="gallery-images" style="background-image: url('../img/elisa-sem.jpeg');"></div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="gallery-images" style="background-image: url('../img/jooj1.jpeg');"></div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="gallery-images" style="background-image: url('../img/jooj2.jpeg');"></div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="gallery-images" style="background-image: url('../img/jooj3.jpeg');"></div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="gallery-images" style="background-image: url('../img/jooj4.jpeg');"></div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="gallery-images" style="background-image: url('../img/jooj5.jpeg');"></div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="gallery-images" style="background-image: url('../img/flavio.jpeg');"></div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="gallery-images" style="background-image: url('../img/flavio-sem.jpeg');"></div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="gallery-images" style="background-image: url('../img/jooj6.jpeg');"></div>
-          </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="gallery-images" style="background-image: url(../img/jooj1.jpeg);"></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="gallery-images" style="background-image: url(../img/jooj2.jpeg);"></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="gallery-images" style="background-image: url(../img/jooj3.jpeg);"></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="gallery-images" style="background-image: url(../img/jooj4.jpeg);"></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="gallery-images" style="background-image: url(../img/jooj5.jpeg);"></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="gallery-images" style="background-image: url(../img/flavio.jpeg);"></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="gallery-images" style="background-image: url(../img/flavio-sem.jpeg);"></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="gallery-images" style="background-image: url(../img/jooj6.jpeg);"></div>
+              </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
@@ -84,16 +83,16 @@
           <h1 class="fs-1">artesanatos</h1>
           <p class="fs-5">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-            possimus error eveniet dolorem itaque?
-          </p>
+            possimus error eveniet dolorem itaque?  
+          </p><a class="btn btn-outline-secondary">encomendar</a>
           <div class="carousel slide" id="carouselArt" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="5000"><img src="../img/billion-dream_poster01.png" alt="..."></div>
               <div class="carousel-item" data-bs-interval="5000"><img src="../img/billion-dream_poster02.png" alt="..."></div>
               <div class="carousel-item" data-bs-interval="5000"><img src="../img/billion-dream_flag.png" alt="..."></div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselArt" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselArt" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                <button class="carousel-control-prev" type="button" data-bs-target="carouselArt" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="carouselArt" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
           </div>
         </div>
         <div class="col-md-12 col-lg-4 px-1 pb-1" id="dreads">
@@ -101,15 +100,15 @@
           <p class="fs-5">
             Lorem ipsum dolor',' sit amet consectetur adipisicing elit.
             Distinctio, sed voluptates? Debitis, numquam nesciunt.
-          </p>
+          </p><a class="btn btn-outline-altsecondary">encomendar</a>
           <div class="carousel slide" id="carouselDre" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="5000"><img src="../img/billion-dream_poster01.png" alt="..."></div>
               <div class="carousel-item" data-bs-interval="5000"><img src="../img/billion-dream_poster02.png" alt="..."></div>
               <div class="carousel-item" data-bs-interval="5000"><img src="../img/billion-dream_flag.png" alt="..."></div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDre" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselDre" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                <button class="carousel-control-prev" type="button" data-bs-target="carouselDre" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="carouselDre" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
           </div>
         </div>
         <div class="col-md-12 col-lg-4 px-1 pb-1" id="cosmeticos">
@@ -117,15 +116,15 @@
           <p class="fs-5">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Perspiciatis sit ut natus repellat fuga.
-          </p>
+          </p><a class="btn btn-outline-altdark">encomendar</a>
           <div class="carousel slide" id="carouselCos" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="5000"><img src="../img/billion-dream_poster01.png" alt="..."></div>
               <div class="carousel-item" data-bs-interval="5000"><img src="../img/billion-dream_poster02.png" alt="..."></div>
               <div class="carousel-item" data-bs-interval="5000"><img src="../img/billion-dream_flag.png" alt="..."></div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCos" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCos" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                <button class="carousel-control-prev" type="button" data-bs-target="carouselCos" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="carouselCos" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
           </div>
         </div>
       </div>
@@ -147,9 +146,7 @@
                  the overall appearance, as well as the showing and hiding via
                  CSS transitions. You can modify any of this with custom CSS or
                  overriding our default variables. It&apos;s also worth noting that
-                 just about any HTML can go within the
-                code .accordion-body
-                , though the transition does limit overflow.
+                 just about any HTML can go within the<code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
@@ -165,9 +162,7 @@
                 classes control the overall appearance, as well as the showing
                 and hiding via CSS transitions. You can modify any of this with
                 custom CSS or overriding our default variables. It&apos;s also worth
-                noting that just about any HTML can go within the
-                code .accordion-body
-                ,though the transition does limit overflow.
+                noting that just about any HTML can go within the<code class="bg-altdanger">.accordion-body</code>,though the transition does limit overflow.
               </div>
             </div>
           </div>
@@ -183,9 +178,7 @@
                 classes control the overall appearance, as well as the showing
                 and hiding via CSS transitions. You can modify any of this with
                 custom CSS or overriding our default variables. It&apos;s also worth
-                noting that just about any HTML can go within the
-                code .accordion-body
-                , though the transition does limit overflow.
+                noting that just about any HTML can go within the<code class="text-secondary">.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
@@ -246,7 +239,7 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Recusandae eos nam ratione beatae atque a.
                 </p>
-                <button class="btn btn-outline-danger mt-3" type="button" style="font-weight: bold">Agendar</button>
+                <button class="btn btn-outline-altdanger mt-3" type="button" style="font-weight: bold">Agendar</button>
               </div>
             </div>
           </div>
@@ -266,6 +259,7 @@
         </div>
       </div>
     </section>
+    <!-- info = informação; forma que está sendo apresentada-->
     <!-- FIXME: contact && map-->
     <section class="p-sm-5" id="map">
       <div class="container">
@@ -274,12 +268,12 @@
           <div class="col-md">
             <ul class="list-group list-group-flush lead text-capitalize">
               <li class="list-group-item"><span class="fw-bold">Localiza&ccedil;&atilde;o Principal:</span> Abaete 498 Bonfim</li>
-              <li class="list-group-item"><span class="fw-bold">Nosso Contato:</span> (31) 9 9998-9995</li>
-              <li class="list-group-item"><span class="fw-bold">nosso e-mail:</span> exemplo@mail.com</li>
-              <li class="list-group-item"><span class="fw-bold">nossos fornecedores:</span> ...@mail.com|| (31) 999...</li>
-              <li class="list-group-item"><span class="fw-bold">facebook:</span> exemplo@mail.com</li>
-              <li class="list-group-item"><span class="fw-bold">patreon:</span> exemplo@mail.com</li>
-              <li class="list-group-item"><span class="fw-bold">instagram:</span> exemplo@mail.com</li>
+                  <li class="list-group-item"><span class="fw-bold">Nosso Contato: </span><span>(31) 9 9998-9995 </span></li>
+                  <li class="list-group-item"><span class="fw-bold">nosso e-mail: </span><span>exemplo@mail.com </span></li>
+                  <li class="list-group-item"><span class="fw-bold">nossos fornecedores: </span><span>...@mail.com|| (31) 999... </span></li>
+                  <li class="list-group-item"><span class="fw-bold">facebook: </span><span>exemplo@mail.com </span></li>
+                  <li class="list-group-item"><span class="fw-bold">patreon: </span><span>exemplo@mail.com </span></li>
+                  <li class="list-group-item"><span class="fw-bold">instagram: </span><span>exemplo@mail.com </span></li>
             </ul>
           </div>
           <div class="col-lg-6">
@@ -294,11 +288,7 @@
     <footer class="text-center position-relative">
       <div class="footer-content pt-4">
         <div class="text-center">
-          <h3>Contate-nos</h3>
-          <p class="p-2 d-none">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
-            perspiciatis veritatis iste ea. Cumque, voluptatem?
-          </p><a class="position-absolute bottom-0 end-0 p-5" href="#"><i class="bi bi-arrow-up-circle h1"></i></a>
+          <h3>Contate-nos</h3><a class="position-absolute bottom-0 end-0 p-5" href="#"><i class="bi bi-arrow-up-circle h1"></i></a>
           <ul class="d-flex">
             <li><a href="">ElisaDreadsLooks</a><a href="#"><i class="bi bi-whatsapp"></i></a></li>
             <li><a href="">FlavioDreadStudio</a><a href="#"><i class="bi bi-whatsapp"></i></a></li>
