@@ -1,0 +1,31 @@
+// Variaveis Customizaveis
+$secondary: #c29938;
+$dark: #000;
+// $accordion-color: red;
+// $accordion-button-color: yellow;
+
+
+// $accordion-button-active-color: red;
+
+// $accordion-button-focus-border-color: brown;
+$accordion-button-focus-box-shadow: white;
+
+$accordion-icon-color: hsl(340, 51%, 67%);
+$accordion-icon-active-color: #bf083c;
+
+
+// importando funções & variaveis; functions primeiro porque variaveis a usa.
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+$custom-themes-colors: (
+  "altprimary": hsl(7, 84%, 52%),
+  "altsecondary": hsl(91, 88%, 37%),
+  "altdark": #522192,
+  "altdanger": $indigo-600
+);
+
+$theme-colors: map-merge($custom-themes-colors, $theme-colors);
+
+// importando bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
