@@ -1,8 +1,37 @@
-mixin carousel(slide)
-  button.carousel-control-prev(type='button' data-bs-target=`${slide}` data-bs-slide='prev')
+mixin carouselItems(img)
+  .carousel-item.active(data-bs-interval='5000')
+    img(src=`${img.src1}` alt='...')
+  .carousel-item(data-bs-interval='5000')
+    img(src=`${img.src2}` alt='...')
+  .carousel-item(data-bs-interval='5000')
+    img(src=`${img.src3}` alt='...')
+
+-
+  const itemsImgs1TO3 = [{
+     "src1": "../img/billion-dream_poster01.png",
+     "src2": "../img/billion-dream_poster02.png",
+     "src3": "../img/billion-dream_poster03.png"
+     }]
+  
+
+  const itemsImgs4TO6 = [{
+    "src1": "../img/billion-dream_poster04.png",
+    "src2": "../img/billion-dream_poster05.png",
+    "src3": "../img/billion-dream_poster06.png"
+    }]
+
+  const itemsImgs7TO9 = [{
+    "src1": "../img/billion-dream_poster07.png",
+    "src2": "../img/billion-dream_poster08.png",
+    "src3": "../img/billion-dream_poster09.png"
+    }]
+
+
+mixin carouselControls(slide)
+  button.carousel-control-prev(type='button' data-bs-target=`#${slide}` data-bs-slide='prev')
     span.carousel-control-prev-icon(aria-hidden='true')
     span.visually-hidden Previous
-  button.carousel-control-next(type='button' data-bs-target=`${slide}` data-bs-slide='next')
+  button.carousel-control-next(type='button' data-bs-target=`#${slide}` data-bs-slide='next')
     span.carousel-control-next-icon(aria-hidden='true')
     span.visually-hidden Next
 
@@ -17,61 +46,52 @@ mixin carousel(slide)
 // FIXME: FLEXBOX
 section#flex.container.mb-5.text-center.mx-auto
   
-  .row.g-0
+  //- .row.g-0
     #fotos.col.pt-5
-      h1.fw-bold.text-capitalize Mais fotos?
+       h1.fw-bold.text-capitalize Mais fotos?
   
   .row.g-0
     #artesanatos.col-md-12.col-lg-4.px-1.pb-1
-      h1.fs-1 artesanatos
+      h1.fs-1.text-altprimary artesanatos
       p.fs-5.
          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
          possimus error eveniet dolorem itaque?  
-      a.btn.btn-outline-secondary encomendar
+      a.btn.btn-outline-altprimary.my-3(href="https://www.youtube.com") encomendar
 
-      #carouselArt.carousel.slide(data-bs-ride="carousel" )
+      #carouselArt.carousel.slide(data-bs-ride="carousel" data-bs-interval="false")
         .carousel-inner
-          .carousel-item.active(data-bs-interval='5000')
-            img(src='../img/billion-dream_poster01.png' alt='...')
-          .carousel-item(data-bs-interval='5000')
-            img(src='../img/billion-dream_poster02.png' alt='...')
-          .carousel-item(data-bs-interval='5000')
-            img(src='../img/billion-dream_flag.png' alt='...')
+          each img in itemsImgs1TO3 
+            +carouselItems(img)
+
         each id in Artid
-          +carousel(id)
+          +carouselControls(id)
 
     #dreads.col-md-12.col-lg-4.px-1.pb-1
-      h1.fs-1 Dreads
+      h1.fs-1.text-altsecondary Dreads
       p.fs-5.
          Lorem ipsum dolor',' sit amet consectetur adipisicing elit.
          Distinctio, sed voluptates? Debitis, numquam nesciunt.
-      a.btn.btn-outline-altsecondary encomendar
+      a.btn.btn-outline-altsecondary.my-3 encomendar
       
       #carouselDre.carousel.slide(data-bs-ride="carousel" )
         .carousel-inner
-          .carousel-item.active(data-bs-interval='5000')
-            img(src='../img/billion-dream_poster01.png' alt='...')
-          .carousel-item(data-bs-interval='5000')
-            img(src='../img/billion-dream_poster02.png' alt='...')
-          .carousel-item(data-bs-interval='5000')
-            img(src='../img/billion-dream_flag.png' alt='...')
+          each img in itemsImgs4TO6 
+            +carouselItems(img)
+
         each id in Dreid
-          +carousel(id)
+          +carouselControls(id)
    
     #cosmeticos.col-md-12.col-lg-4.px-1.pb-1
-      h1.fs-1 cosmeticos
+      h1.fs-1.text-tertiary cosmeticos
       p.fs-5.
          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
          Perspiciatis sit ut natus repellat fuga.
-      a.btn.btn-outline-altdark encomendar
+      a.btn.btn-outline-tertiary.my-3 encomendar
      
       #carouselCos.carousel.slide(data-bs-ride="carousel" )
         .carousel-inner
-          .carousel-item.active(data-bs-interval='5000')
-            img(src='../img/billion-dream_poster01.png' alt='...')
-          .carousel-item(data-bs-interval='5000')
-            img(src='../img/billion-dream_poster02.png' alt='...')
-          .carousel-item(data-bs-interval='5000')
-            img(src='../img/billion-dream_flag.png' alt='...')
+          each img in itemsImgs7TO9 
+            +carouselItems(img)
+
         each id in Cosid
-          +carousel(id)
+          +carouselControls(id)
