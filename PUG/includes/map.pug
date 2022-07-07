@@ -1,9 +1,8 @@
 mixin listas(li) 
   li.list-group-item
-    span.fw-bold #{li.info} 
+    span #{li.info} 
     span #{li.forma} 
 
-// info = informação; forma que está sendo apresentada
 
 -
   const lis = [
@@ -24,8 +23,8 @@ section#map.p-sm-5
       .col-md
         ul.list-group.list-group-flush.lead.text-capitalize
           li.list-group-item
-            span.fw-bold Localiza&ccedil;&atilde;o Principal:
-            |  Abaete 498 Bonfim
+            span Localiza&ccedil;&atilde;o Principal: 
+            span Abaete 498 Bonfim
 
           each li in lis 
             +listas(li)
