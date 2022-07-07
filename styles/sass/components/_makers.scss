@@ -1,11 +1,10 @@
 @use '../abstracts/colors' as *;
 
 section#makers {
-  // background-color: #6a0202;
   background-color: $cor-fundo;
-  // background-color: #222;
-  // background-color: transparent;
   color: $cor-texto;
+
+  h2{font-family: SSDB, Helvetica, Arial, sans-serif;}
 
   .profile-image {
     width: 100px;
@@ -21,5 +20,8 @@ section#makers {
 
   div.card-body {
     height: 400px;
+
+    h3{font-family: "century gothic", SSDB, Helvetica, Arial, sans-serif;}
+    .card-text{font-family: SSI, Helvetica, Arial, sans-serif;}
   }
 }
