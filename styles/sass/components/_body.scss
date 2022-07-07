@@ -1,8 +1,18 @@
 @use "../abstracts/colors" as *;
 
 @font-face {
-  font-family: sansSerifFLF;
-  src: url(../../../fonts/sansSerifFLF/SansSerifFLF.otf);
+  font-family: SS;
+  src: url("/fonts/sansSerifFLF/SansSerifFLF.otf");
+}
+
+@font-face {
+  font-family: SSI;
+  src: url("/fonts/sansSerifFLF/SansSerifFLF-Italic.otf");
+}
+
+@font-face {
+  font-family: SSDB;
+  src: url("/fonts/sansSerifFLF/SansSerifFLF-Demibold.otf");
 }
 
 html{
@@ -12,9 +22,6 @@ html{
 
 body {
   background-color: $cor-fundo;
-  // font-family: "century gothic"; 
-  font-family: sansSerifFLF; 
-
 }
 
 img {
