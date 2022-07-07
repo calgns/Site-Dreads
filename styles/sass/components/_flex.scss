@@ -1,11 +1,5 @@
 @use "../abstracts/colors" as *;
 
-
-@font-face {
-  font-family: sansSerifFLFBold;
-  src: url(../../../fonts/sansSerifFLF/SansSerifFLF-Demibold.otf);
-}
-
 section#flex {
   background-color: $cor-fundo;
   padding: 0;
@@ -23,33 +17,26 @@ section#flex {
   }
 
   @mixin fileira {
-    text-transform: capitalize;
-    
-    h1 {
-  
-      text-align: center;
-      margin-top: 50px;
-      padding: 20px 0; 
-  
+    .container{
+      height: 250px;
+      margin-bottom: 30px;
+      color: $cor-texto;
+      text-transform: capitalize;
+      
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-family: SSDB, Helvetica, Arial, sans-serif; 
+        
+      }
+      
+      p {
+        margin: 10px auto;
+        max-width: 21rem;
+        font-family: SSI, Helvetica, Arial, sans-serif;
+        
+      }
     }
-    
-    p {
-      margin: 10px auto;
-      max-width: 21rem;
-      text-align: auto;
-      font-family: "century gothic"; //times new roman, helvetica, garamond, bodoni, century expanded, futura,
-    }
-    color: $cor-texto;
-    
-  }
-
-  div#fotos {
-    font-family: sansSerifFLFBold;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    color: antiquewhite;
-
   }
 
   div#artesanatos {@include fileira;}
