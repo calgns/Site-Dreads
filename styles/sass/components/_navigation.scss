@@ -1,14 +1,8 @@
 @use "../abstracts/colors" as *;
 
-
-@font-face {
-  font-family: sansSerifFLFBold;
-  src: url(../../../fonts/sansSerifFLF/SansSerifFLF-Demibold.otf);
-}
-
 nav.navbar {
   background-color: $cor-nav;
-  font-family: sansSerifFLFBold;
+  font-family: SSDB, Helvetica, Arial, sans-serif;
   a.nav-link {
     position: relative;
     margin-left: 10px;
