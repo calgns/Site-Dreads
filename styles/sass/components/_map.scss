@@ -11,6 +11,9 @@ section#map{
       border-color: wheat;
       color: $cor-texto;
       
+      span:nth-child(1){
+        font-family: SSDB;
+      }
     }
   }
   div.col-lg-6{
