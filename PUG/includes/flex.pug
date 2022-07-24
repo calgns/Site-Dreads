@@ -47,13 +47,13 @@ mixin carouselControls(slide)
 section#flex.container.mb-5.text-center.mx-auto
   
   .row.g-0
-    #artesanatos.col-md-12.col-lg-4.px-1.pb-1
+    #artesanatos.col-md-12.col-lg-4.px-1.pb-5
       .container
         h1.fs-1.text-altprimary artesanatos
         p.fs-5.
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
           possimus error eveniet dolorem itaque?  
-        a.btn.btn-outline-altprimary.my-3(href="https://www.youtube.com") encomendar
+        a.btn.btn-outline-altprimary.mt-1(href="https://www.youtube.com") encomendar
 
       #carouselArt.carousel.slide(data-bs-ride="carousel")
         .carousel-inner
@@ -63,13 +63,13 @@ section#flex.container.mb-5.text-center.mx-auto
         each id in Artid
           +carouselControls(id)
 
-    #dreads.col-md-12.col-lg-4.px-1.pb-1
+    #dreads.col-md-12.col-lg-4.px-1.pb-5
       .container
         h1.fs-1.text-altsecondary Dreads
         p.fs-5.
           Lorem ipsum dolor',' sit amet consectetur adipisicing elit.
           Distinctio, sed voluptates? Debitis, numquam nesciunt.
-        a.btn.btn-outline-altsecondary.my-3 encomendar
+        a.btn.btn-outline-altsecondary.mt-1 encomendar
       
       #carouselDre.carousel.slide(data-bs-ride="carousel" )
         .carousel-inner
@@ -79,13 +79,13 @@ section#flex.container.mb-5.text-center.mx-auto
         each id in Dreid
           +carouselControls(id)
    
-    #cosmeticos.col-md-12.col-lg-4.px-1.pb-1
+    #cosmeticos.col-md-12.col-lg-4.px-1.pb-5
       .container
         h1.fs-1.text-tertiary cosmeticos
         p.fs-5.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Perspiciatis sit ut natus repellat fuga.
-        a.btn.btn-outline-tertiary.my-3 encomendar
+        a.btn.btn-outline-tertiary.mt-1 encomendar
       
       #carouselCos.carousel.slide(data-bs-ride="carousel" )
         .carousel-inner
