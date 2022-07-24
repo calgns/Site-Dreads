@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background-color: #000;
+  background-color: #222;
 }
 
 img {
@@ -56,17 +56,22 @@ header {
 header .gallery-images {
   width: 100%;
   margin-top: 50px;
-  min-height: 300px;
-  height: 500px;
-  max-height: 45vw;
-  background-size: contain;
-  background-color: #000;
+  height: 80vh;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+  background-color: #000;
+}
+@media only screen and (max-width: 500px) {
+  header .gallery-images {
+    background-attachment: scroll;
+    height: 65vh;
+  }
 }
 
 section#flex {
-  background-color: #000;
+  background-color: #222;
   padding: 0;
   margin: 0;
 }
@@ -85,6 +90,12 @@ section#flex div#artesanatos .container {
   color: white;
   text-transform: capitalize;
 }
+@media only screen and (max-width: 991px) {
+  section#flex div#artesanatos .container {
+    height: 200px;
+    margin-bottom: 10px;
+  }
+}
 section#flex div#artesanatos .container h1 {
   text-align: center;
   margin-top: 50px;
@@ -101,6 +112,12 @@ section#flex div#dreads .container {
   color: white;
   text-transform: capitalize;
 }
+@media only screen and (max-width: 991px) {
+  section#flex div#dreads .container {
+    height: 200px;
+    margin-bottom: 10px;
+  }
+}
 section#flex div#dreads .container h1 {
   text-align: center;
   margin-top: 50px;
@@ -116,6 +133,12 @@ section#flex div#cosmeticos .container {
   margin-bottom: 30px;
   color: white;
   text-transform: capitalize;
+}
+@media only screen and (max-width: 991px) {
+  section#flex div#cosmeticos .container {
+    height: 200px;
+    margin-bottom: 10px;
+  }
 }
 section#flex div#cosmeticos .container h1 {
   text-align: center;
@@ -154,7 +177,7 @@ section#questions .accordion-button[aria-expanded=true] {
 section#questions .accordion-button {
   font-size: 1.5rem;
   font-family: SSDB, Helvetica, Arial, sans-serif;
-  background-color: #000;
+  background-color: #222;
   color: white;
 }
 @media only screen and (max-width: 768px) {
@@ -216,14 +239,19 @@ footer {
   background-color: #111;
   color: aliceblue;
 }
-footer div.footer-content div.container p.p-2 {
-  max-width: 520px;
+footer div.footer-content div.text-center a.position-absolute {
+  padding: 0 30px 30px 0; /*esquerda e debaixo*/
+}
+@media (max-width: 410px) {
+  footer div.footer-content div.text-center a.position-absolute {
+    padding: 0 10px 10px 0;
+  }
 }
 footer ul {
+  padding: 0;
   align-items: center;
   justify-content: center;
   list-style: none;
-  padding: 0;
 }
 footer ul a {
   color: wheat;
@@ -233,7 +261,7 @@ footer ul li {
   border-color: red;
 }
 footer .footer-bottom {
-  background-color: #000;
+  background-color: #222;
   padding: 5vh 0;
 }
 
@@ -296,7 +324,7 @@ footer .footer-bottom {
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: 34, 34, 34;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -305,7 +333,7 @@ footer .footer-bottom {
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #222;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -847,7 +875,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #222;
   border: 1px solid var(--bs-border-color);
   border-radius: 0.375rem;
   max-width: 100%;
@@ -2241,7 +2269,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #222;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   appearance: none;
@@ -2261,7 +2289,7 @@ progress {
 }
 .form-control:focus {
   color: #212529;
-  background-color: #fff;
+  background-color: #222;
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -2376,7 +2404,7 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #222;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -2451,7 +2479,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: #222;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2557,10 +2585,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #222, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #222, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -3973,8 +4001,8 @@ textarea.form-control-lg {
   --bs-nav-tabs-border-radius: 0.375rem;
   --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
   --bs-nav-tabs-link-active-color: #495057;
-  --bs-nav-tabs-link-active-bg: #fff;
-  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
+  --bs-nav-tabs-link-active-bg: #222;
+  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #222;
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
 }
 .nav-tabs .nav-link {
@@ -4656,8 +4684,8 @@ textarea.form-control-lg {
 }
 
 .accordion {
-  --bs-accordion-color: #000;
-  --bs-accordion-bg: #fff;
+  --bs-accordion-color: #fff;
+  --bs-accordion-bg: #222;
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
   --bs-accordion-border-width: 1px;
