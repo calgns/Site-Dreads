@@ -151,37 +151,37 @@ section#flex div#cosmeticos .container p {
   font-family: SSI, Helvetica, Arial, sans-serif;
 }
 
-section#questions {
+section#duvidas {
   font-family: SS, Helvetica, Arial, sans-serif;
   font-size: 1.25rem;
 }
-section#questions h1 {
+section#duvidas h1 {
   font-family: SSDB, Helvetica, Arial, sans-serif;
 }
 @media only screen and (max-width: 768px) {
-  section#questions {
+  section#duvidas {
     font-size: 1.2rem;
   }
 }
-section#questions .accordion .accordion-item {
+section#duvidas .accordion .accordion-item {
   background-color: #111;
   border-color: #ccc;
   color: white;
 }
-section#questions .accordion-button[aria-expanded=false] {
+section#duvidas .accordion-button[aria-expanded=false] {
   color: rgb(170, 170, 170);
 }
-section#questions .accordion-button[aria-expanded=true] {
+section#duvidas .accordion-button[aria-expanded=true] {
   color: white;
 }
-section#questions .accordion-button {
+section#duvidas .accordion-button {
   font-size: 1.5rem;
   font-family: SSDB, Helvetica, Arial, sans-serif;
   background-color: #222;
   color: white;
 }
 @media only screen and (max-width: 768px) {
-  section#questions .accordion-button {
+  section#duvidas .accordion-button {
     font-size: 1.6rem;
   }
 }
@@ -214,22 +214,22 @@ section#makers div.card-body .card-text {
 }
 
 @media (max-width: 400px) {
-  section#map ul {
+  section#endereco ul {
     margin: 0;
   }
 }
-section#map ul li {
+section#endereco ul li {
   background-color: transparent;
   border-color: wheat;
   color: white;
 }
-section#map ul li span:nth-child(1) {
+section#endereco ul li span:nth-child(1) {
   font-family: SSDB, Helvetica, Arial, sans-serif;
 }
-section#map div.col-lg-6 {
+section#endereco div.col-lg-6 {
   height: 400px;
 }
-section#map div.col-lg-6 #mapbox {
+section#endereco div.col-lg-6 #mapbox {
   width: 100%;
   height: 100%;
 }
