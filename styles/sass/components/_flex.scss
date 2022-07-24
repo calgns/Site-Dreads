@@ -23,6 +23,11 @@ section#flex {
       color: $cor-texto;
       text-transform: capitalize;
       
+      @media only screen and (max-width: 991px) {
+        height: 200px;
+        margin-bottom: 10px;
+      }
+
       h1 {
         text-align: center;
         margin-top: 50px;
